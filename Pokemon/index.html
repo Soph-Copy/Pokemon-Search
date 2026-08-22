@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-yellow-400 flex items-center justify-center p-6">
+    <div class="bg-gray-950 border-4 border-blue-500 rounded-3xl p-8 md:p-12 shadow-2xl w-full max-w-2xl">
+
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-black text-white"> WELCOME TO THE <span class="text-yellow-400">POKÉMON</span> WORLD </h1>
+        <div class="w-24 h-1 bg-blue-500 mx-auto mt-4 mb-6 rounded-full"></div>
+        <p class="text-gray-300 text-lg md:text-xl mb-8"> Enter any Pokémon's name you wish to find 👇 </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <input class="flex-1 px-5 py-3 rounded-xl bg-white text-gray-900 font-semibold outline-none focus:ring-4 focus:ring-blue-400" type="text" id="pokemon" placeholder="Enter Pokémon name..." />
+
+        <button onclick="fetchData()" class="px-6 py-3 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-bold transition duration-200 shadow-lg"> Fetch Pokemon</button>
+      </div>
+
+      <div class="mt-10 flex justify-center">
+        <div class="bg-white/10 border border-white/10 rounded-2xl p-6 w-full min-h-64 flex items-center justify-center">
+          <img src="" alt="Pokemon Sprite" id="pokemonSprite" class="w-56 h-56 object-contain" style="display: none"/>
+        </div>
+      </div>
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
